@@ -1,0 +1,73 @@
+﻿# --- Session Privacy (NEVER SYNC) ---
+sessions/*/logs/
+sessions/*/continuity/
+sessions/*/assets/
+sessions/*/config/*.local.json
+
+# --- Unity 6.3 LTS ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+*.pidb.meta
+*.pdb
+*.sln
+*.csproj
+UnityGenerated/
+ProjectSettings/Packages/
+UserSettings/
+*.userprefs
+
+# --- Unreal Engine 5.7 ---
+Intermediate/
+Saved/
+DerivedDataCache/
+Binaries/
+*.VC.db
+*.opensdf
+*.sdf
+*.log
+*.tmp
+*.pdb
+*.exp
+*.ilk
+*.lib
+*.dll
+*.exe
+
+# --- BugWorld Projects (Exclude All 1000 Unity Projects) ---
+bugworld2026/bugapp*/
+bugworld2026/-/
+
+# --- DBUG Productions (Exclude All) ---
+[0-9]/*/Intermediate/
+[0-9]/*/Saved/
+
+# --- Core Security ---
+core/*.key
+core/*.secret
+core/local_settings.json
+*.env
+*.local.json
+
+# --- Tools Local ---
+tools/bugworld-mcp/*.local.json
+tools/bugworld-mcp/*.env
+tools/tga/*.cache
+tools/tga/*.tmp
+
+# --- Visual Studio ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+UpgradeLog.htm
+UpgradeLog.XML
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
