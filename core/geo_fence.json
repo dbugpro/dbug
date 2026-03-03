@@ -1,10 +1,13 @@
 ﻿{
-    "spec": "v260303.1",
-    "current_location": "England",
-    "current_session": "DBUG 260303 (1)",
-    "zero_china_dependencies": true,
-    "active_aliases": ["dbugq", "adminq", "dbugx", "dbug."],
-    "source_authority": "admin. (Core Authority) - DBUG 260222 (2)",
-    "studio_address": "22 Kildare Avenue, Ipswich IP1 5NF",
-    "studio_name": "White House Studio"
+  "spec": "v260303.1",
+  "current_location": "England",
+  "current_session": "DBUG 260303 (1)",
+  "departure_date": "2026-02-28",
+  "constraints": {
+    "zero_china_dependencies": "mandatory for worldwide distribution",
+    "unity_quarantine_active": false,
+    "unity_version_approved": "Unity 6.3 LTS (6000.3.10f1)",
+    "ue5_global_compliance": "validated (UE5.7)"
+  },
+  "critical_constraint": "Development resumed in England after 2026-02-28 — zero_china_dependencies remains enforced globally"
 }
