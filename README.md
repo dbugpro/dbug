@@ -1,20 +1,39 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# dbug — BUGWORLD 2026
 
-# Run and deploy your AI Studio app
+> Public Template Repository for BUGWORLD 2026 Session Development  
+> **Spec:** `v260303.1` | **Sync Root:** `C:\dbug`
 
-This contains everything you need to run your app locally.
+## 🔐 Core Rules
+- `dbug.` and `admin.` **must** include trailing periods (non-negotiable)
+- `zero_china_dependencies` is mandatory for global distribution
+- Admin Triad (`adminx`, `admin.`, `adminq`) required for `session_init`
 
-View your app in AI Studio: https://ai.studio/apps/e712dc26-20a3-4ad6-97c4-bf53afb81451
+## 🗂️ Structure
+C:\dbug
+├── core/ # Identity layer (v260303.1)
+├── bugworld-mcp/ # Message bus service
+├── docs/ # Documentation
+├── .github/ # Template config + workflows
+├── .gitattributes # LFS configuration
+├── .gitignore # UE5 + Unity exclusions
+├── README.md # This file
+└── LICENSE # MIT License
 
-## Run Locally
+## 🚀 Quick Start
+1. Click **"Use this template"** → **"Create a new repository"**
+2. Clone your new repo: `git clone https://github.com/YOU/NEW-REPO.git`
+3. Install Git LFS: `git lfs install`
+4. Configure local paths in `core/session_protocol.json`
+5. Initialize session with admin triad
 
-**Prerequisites:**  Node.js
+## 🔄 Sync Configuration
+- **Local Root:** `C:\dbug`
+- **Remote:** `https://github.com/dbugpro/dbug`
+- **Branches:** `main` (template), `session/<SESSION_ID>` (isolated work)
 
+## 🎮 Engine Support
+- **Unreal Engine:** 5.7 (`C:\EpicGames\UE_5.7\...`)
+- **Unity:** 6.3 LTS (`C:\bugworld2026\bugapp000-999`)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📜 License
+MIT License. See `LICENSE` for details.
