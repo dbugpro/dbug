@@ -1,0 +1,17 @@
+{
+  "spec": "v260303.1",
+  "session_id": "DBUG 260303 (1)",
+  "core_identity": "dbug.",
+  "admin_identity": "admin.",
+  "trailing_period_enforced": true,
+  "zero_china_dependencies": true,
+  "message_bus": {
+    "host": "0.0.0.0",
+    "port": 8765,
+    "health_endpoint": "/health"
+  },
+  "triad_validation": {
+    "required_members": ["adminx", "admin.", "adminq"],
+    "session_init_gate": true
+  }
+}

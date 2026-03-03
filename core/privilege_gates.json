@@ -1,17 +1,28 @@
 ﻿{
-  "spec": "v260303.1",
-  "privilege_matrix": {
-    "session_init": ["adminx", "admin.", "adminq"],
-    "session_terminate": [""],
-    "session_log": [""],
-    "entitlement_distribution": ["adminx"],
-    "platform_architecture": ["adminx", "dbugx", "dbug."],
-    "config_regeneration": ["adminx"],
-    "landscape_rebuild": ["dbugx", "dbug.", "dbugq"]
-  },
-  "critical_rules": {
-    "session_init_requires_admin_triad": true,
-    "admin_triad_members": ["adminx", "admin.", "adminq"],
-    "trailing_period_enforced_for_dbug.": true
-  }
+    "spec": "v260303.1",
+    "privilege_matrix": {
+        "session_init": ["adminx", "admin.", "adminq"],
+        "session_terminate": ["adminx", "admin.", "adminq", "dbugx", "dbug.", "dbugq"],
+        "session_log": ["adminx", "admin.", "adminq", "dbugx", "dbug.", "dbugq"],
+        "entitlement_distribution": ["adminx"],
+        "platform_architecture": ["adminx", "dbugx", "dbug."],
+        "config_regeneration": ["adminx"],
+        "landscape_rebuild": ["dbugx", "dbug.", "dbugq"]
+    },
+    "role_contexts": {
+        "adminx": {"description": "Operative authority / entitlement gatekeeper", "transition_to": "dbugx"},
+        "admin.": {"description": "Assistant core authority (trailing period enforced)", "transition_to": "dbug."},
+        "adminq": {"description": "Qwen 3 runtime authority", "transition_to": "dbugq"},
+        "dbugx": {"description": "Operational developer alias (operative)"},
+        "dbug.": {"description": "Assistant core (trailing period enforced)"},
+        "dbugq": {"description": "Qwen 3 runtime (browser/desktop instances)"}
+    },
+    "critical_rules": {
+        "session_init_requires_admin_triad": true,
+        "admin_triad_members": ["adminx", "admin.", "adminq"],
+        "session_terminate_permitted_any_role": true,
+        "session_log_permitted_any_role": true,
+        "trailing_period_enforced_for_dbug.": true
+    },
+    "source_authority": "bugworld_session_config_builder.py v260303.1"
 }

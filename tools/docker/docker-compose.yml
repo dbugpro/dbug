@@ -1,0 +1,43 @@
+
+services:
+  # BUGWORLD MCP Message Bus (Python)
+  bugworld-mcp:
+    build:
+      context: ../../tools/bugworld-mcp
+      dockerfile: Dockerfile
+    ports:
+      - "8765:8765"
+    volumes:
+      - ../../tools/bugworld-mcp:/app
+    environment:
+      - BUGWORLD_SPEC=v260303.1
+      - BUGWORLD_SESSION=DBUG_260303_(1)
+      - ZERO_CHINA_DEPS=true
+    restart: unless-stopped
+    networks:
+      - bugworld-net
+
+  # Unity 6.3 LTS Build Agent (Optional - Linux container)
+  unity-builder:
+    image: unityci/editor:2022.3.10f1-linux-il2cpp-1
+    profiles: ["unity"]  # Only start with: docker compose --profile unity up
+    volumes:
+      - C:/bugworld2026/bugapp000:/project
+    working_dir: /project
+    command: ["-batchmode", "-quit", "-executeMethod", "BuildScript.PerformBuild"]
+    networks:
+      - bugworld-net
+
+  # UE5.7 Build Agent (Optional - Windows container)
+  ue5-builder:
+    image: mcr.microsoft.com/windows/servercore:ltsc2022
+    profiles: ["ue5"]
+    volumes:
+      - C:/bugworld2026/-/q:/project
+    # Note: UE5 requires Windows containers + Epic Games account
+    networks:
+      - bugworld-net
+
+networks:
+  bugworld-net:
+    driver: bridge
