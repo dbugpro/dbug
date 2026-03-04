@@ -2,7 +2,8 @@
   "version": "v260209.2",
   "identities": {
     "user": "dbug.",
-    "core_authority": "admin."
+    "core_authority": "admin.",
+    "universal_core_identity": "dbug."
   },
   "enforce_trailing_period": true
 }
