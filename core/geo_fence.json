@@ -1,0 +1,8 @@
+{
+  "version": "v260209.2",
+  "location": "England",
+  "constraints": [
+    "zero_china_dependencies"
+  ],
+  "status": "COMPLIANT"
+}

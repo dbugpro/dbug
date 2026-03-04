@@ -1,0 +1,7 @@
+{
+  "version": "v260209.2",
+  "session_id": "DBUG 260304 (1)",
+  "topology": "Unified",
+  "sync_mechanisms": ["Git", "MAGICUBE_Isolation"],
+  "project_workspace": "./bugworld2026"
+}

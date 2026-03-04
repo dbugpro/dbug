@@ -1,0 +1,13 @@
+{
+  "version": "v260209.2",
+  "triad": {
+    "executor": "adminx",
+    "core_authority": "admin.",
+    "moderator": "adminq"
+  },
+  "privileges": {
+    "adminx": ["initiation", "validation", "execution"],
+    "admin.": ["structural_mapping", "audit_clean"],
+    "adminq": ["safety_validation", "path_analysis"]
+  }
+}

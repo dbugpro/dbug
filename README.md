@@ -1,20 +1,19 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# BUGWORLD 2026 - dbug Repository
 
-# Run and deploy your AI Studio app
+## Core Structure
+- `.uniqube/`: Singularity and Environment Instance isolation.
+- `metadata.json`: Platform metadata.
+- `.gitignore`: Git exclusion rules.
 
-This contains everything you need to run your app locally.
+## Session Information
+- **Session ID**: DBUG 260304 (1)
+- **Status**: Simulation Active
+- **Isolation**: Google AI Studio environment artifacts migrated to `/.uniqube/g/`.
 
-View your app in AI Studio: https://ai.studio/apps/e712dc26-20a3-4ad6-97c4-bf53afb81451
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Essential Files
+- `identity.json` (Pending)
+- `privilege_gates.json` (Pending)
+- `geo_fence.json` (Pending)
+- `session_protocol.json` (Pending)
+- `core_manifest.json` (Pending)
+- `bugworld2026.uproject` (Pending)
