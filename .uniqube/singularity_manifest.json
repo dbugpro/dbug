@@ -1,0 +1,22 @@
+{
+  "id": "UNIQUBE_SINGULARITY",
+  "symbol": "-",
+  "alias": ".",
+  "location": "root/.uniqube",
+  "geometry": {
+    "type": "UNIQUBE",
+    "dimensions": "9x9x9",
+    "cell_count": 729,
+    "range": "111-999",
+    "center_cell": "-",
+    "parent_structure": "MAGICUBE",
+    "parent_dimensions": "10x10x10",
+    "parent_cell_count": 1000,
+    "parent_range": "000-999"
+  },
+  "description": "This folder represents the conceptual '-' (Dash) singularity at the center of the 9x9x9 UNIQUBE. The period (.) naming convention is used for filesystem stability while preserving the symbolic link to the dash representation used elsewhere in BUGWORLD 2026.",
+  "timestamp": "2026-03-04T05:52:00Z",
+  "authority": "adminx",
+  "conduit": "adminq",
+  "runtime": "adming"
+}

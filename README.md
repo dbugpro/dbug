@@ -1,43 +1,20 @@
-﻿# dbug — BUGWORLD 2026
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-> Public Template Repository for BUGWORLD 2026 Session Development  
-> **Spec:** `v260303.1` | **Sync Root:** `C:\dbug` | **Session:** `DBUG 260303 (1)`
+# Run and deploy your AI Studio app
 
-## 🔐 Core Rules
-- `dbug.` and `admin.` **must** include trailing periods (non-negotiable)
-- `zero_china_dependencies` is mandatory for global distribution
-- Admin Triad (`adminx`, `admin.`, `adminq`) required for `session_init`
+This contains everything you need to run your app locally.
 
-## 🗂️ Structure
-C:\dbug
-├── core/ # Identity layer (v260303.1)
-├── bugworld2026/ # Unity 6.3 LTS (bugapp000-999) + UE5.7 (-/q/)
-├── bugbase2026/ # BugBase 2026 modules
-├── 0/ - 9/ # DBUG PRODUCTIONS projects
-├── tools/ # MCP, TGA, utilities
-├── docs/ # Documentation
-├── sessions/ # Local-only session data (EXCLUDED from sync)
-├── .github/ # Template config + workflows
-├── .gitattributes # LFS configuration
-├── .gitignore # Unity/UE5 exclusions
-├── README.md # This file
-└── LICENSE # MIT License
+View your app in AI Studio: https://ai.studio/apps/e712dc26-20a3-4ad6-97c4-bf53afb81451
 
-## 🚀 Quick Start
-1. Click **"Use this template"** → **"Create a new repository"**
-2. Clone your new repo: `git clone https://github.com/YOU/NEW-REPO.git`
-3. Install Git LFS: `git lfs install`
-4. Configure local paths in `core/session_protocol.json`
-5. Initialize session with admin triad
+## Run Locally
 
-## 🎮 Engine Support
-- **Unity:** 6.3 LTS (6000.3.10f1) — Primary
-- **Unreal Engine:** 5.7 — Secondary
+**Prerequisites:**  Node.js
 
-## 🔄 Sync Configuration
-- **Local Root:** `C:\dbug`
-- **Remote:** `https://github.com/dbugpro/dbug`
-- **Branches:** `main` (template), `session/<SESSION_ID>` (isolated work)
 
-## 📜 License
-MIT License. See `LICENSE` for details.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
