@@ -7,5 +7,5 @@
     "geo_fence.json",
     "session_protocol.json"
   ],
-  "singularity": ".uniqube"
+  "singularity": ".beta"
 }
