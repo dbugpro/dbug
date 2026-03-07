@@ -11,7 +11,6 @@
 
 ## 🗂️ Synchronization with Google AI Studio
 
-UPDATING DBUG PROJECT ON GOOGLE AI STUDIO
 https://ai.studio/apps/e712dc26-20a3-4ad6-97c4-bf53afb81451
 
 # DBUG Repository — v260307.3
