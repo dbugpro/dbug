@@ -1,7 +1,194 @@
 {
-  "version": "v260209.2",
-  "session_id": "DBUG 260304 (1)",
-  "topology": "Unified",
-  "sync_mechanisms": ["Git", "MAGICUBE_Isolation"],
-  "project_workspace": "./bugworld2026"
+  "spec": "v260307.3",
+  "parallel_topology": {
+    "browser_instance": "dbug./dbugq (browser)",
+    "desktop_instance": "dbug./dbugq (desktop)",
+    "sync_mechanism": "privilege_gates_not_role_state",
+    "message_bus": "localhost:8765 (bugworld-mcp)",
+    "core_identity": "dbug. (trailing period enforced universally)"
+  },
+  "project_workspaces": {
+    "home": "C:\\dbug\\0\\0\\0\\core_manifest.json",
+    "unity_primary": "C:\\dbug\\bugworld2026\\bugapp000",
+    "ue5_secondary": "C:\\dbug\\bugworld2026\\-\\q\\q.uproject"
+  },
+  "code_workspaces": [
+    "C:\\dbug\\bugworld2026\\bugapp000\\bugapp000.code-workspace",
+    "C:\\dbug\\bugworld2026\\-\\q\\dbug-q.code-workspace",
+    "C:\\dbug\\bugworld2026\\dashboard\\dashboard.code-workspace",
+    "C:\\dbug\\bugworld2026\\SDK\\v1.0\\bugworld_sdk.code-workspace",
+    "C:\\dbug\\bugworld2026\\source\\bugworld_source.code-workspace",
+    "C:\\dbug\\bugbase2026\\bugbase2026.code-workspace",
+    "C:\\dbug\\0\\0\\0\\dbug000.code-workspace",
+    "C:\\dbug\\0\\0\\1\\dbug001.code-workspace",
+    "C:\\dbug\\0\\0\\2\\dbug002.code-workspace",
+    "C:\\dbug\\0\\0\\3\\dbug003.code-workspace",
+    "C:\\dbug\\0\\0\\4\\dbug004.code-workspace",
+    "C:\\dev\\dev.code-workspace",
+    "C:\\dbug\\dbug.code-workspace",
+    "C:\\dbug\\core\\core.code-workspace",
+    "C:\\dbug\\.stem\\.stem.code-workspace",
+    "C:\\dbug\\.stem\\i\\i.code-workspace",
+    "C:\\dbug\\.stem\\ii\\ii.code-workspace",
+    "C:\\dbug\\.stem\\iii\\iii.code-workspace",
+    "C:\\dbug\\.stem\\iv\\iv.code-workspace",
+    "C:\\dbug\\.stem\\v\\v.code-workspace",
+    "C:\\dbug\\.stem\\vi\\vi.code-workspace",
+    "C:\\dbug\\.stem\\vii\\vii.code-workspace",
+    "C:\\dbug\\.stem\\viii\\viii.code-workspace",
+    "C:\\dbug\\.stem\\ix\\ix.code-workspace",
+    "C:\\dbug\\.stem\\x\\x.code-workspace"
+  ],
+  "engine_paths": {
+    "unity_primary": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.10f1\\Editor\\Unity.exe",
+    "ue5_secondary": "C:\\EpicGames\\UE_5.7\\Engine\\Binaries\\Win64\\UnrealEditor.exe"
+  },
+  "engine_versions": {
+    "unity": "Unity 6000 LTS (Windows 11)",
+    "ue5": "Unreal Engine 5.7 (Windows 11)"
+  },
+  "session_boundaries": {
+    "session_init_requires": [
+      "adminx",
+      "admin.",
+      "adminq"
+    ],
+    "session_terminate_permitted": [
+      "adminx",
+      "admin.",
+      "adminq",
+      "dbugx",
+      "dbug.",
+      "dbugq",
+      " "
+    ],
+    "session_log_permitted": [
+      "adminx",
+      "admin.",
+      "adminq",
+      "dbugx",
+      "dbug.",
+      "dbugq",
+      " "
+    ],
+    "session_active_until": "2026-03-07 23:59 GMT",
+    "next_session_handoff": "DBUG 260308 (2026-03-08 06:00 GMT)"
+  },
+  "log_aggregation": {
+    "base_path": "C:\\dbug\\sessions\\<session_id>\\",
+    "current_session": "C:\\dbug\\sessions\\DBUG_260307_1\\",
+    "logs": "C:\\dbug\\sessions\\DBUG_260307_1\\logs\\",
+    "continuity": "C:\\dbug\\sessions\\DBUG_260307_1\\continuity\\",
+    "assets": "C:\\dbug\\sessions\\DBUG_260307_1\\assets\\"
+  },
+  "location_context": "England",
+  "constraint_lock": "zero_china_dependencies",
+  "geo_fence_compliance": {
+    "departure_date": "2026-02-28",
+    "current_location": "England",
+    "china_dependencies": "ZERO (MANDATORY)"
+  },
+  "structural_schema": {
+    "structure_directory": {
+      "path": "core/.structure/",
+      "pattern": "N-N\\Value\\N-(N-1)\\Value...\\N-1\\Value",
+      "instantiation": "conceptual_with_on_demand_physical_creation",
+      "navigation_script": "core/.structure/navigator.py",
+      "documentation": "core/.structure/README.md",
+      "examples": [
+        "1-1/0/.gitkeep",
+        "2-2/00/2-1/0/.gitkeep",
+        "3-3/000/3-2/00/3-1/0/.gitkeep"
+      ],
+      "scalability": {
+        "min_scale": 1,
+        "max_scale": 10,
+        "practical_limit": "Windows MAX_PATH (260 chars unless Long Paths enabled)"
+      },
+      "system_1_description": "Fixed base-10 branching container (10 folders per level)",
+      "system_2_description": "Variable-length incremental MIN/MCN addressing"
+    },
+    "min_mcn_logic": {
+      "min_prefix": "000000",
+      "min_format": "{prefix}{Index}",
+      "min_index_logic": "Variable-length incremental (0, 1, 2... 9, 00, 01... 99, 000... 999, etc.)",
+      "mcn_format": "{MIN}{Cell}",
+      "cell_range": "000-999",
+      "boundaries": {
+        "depth_3": {
+          "scale": 1000,
+          "min_range": "{prefix}0",
+          "min_example": "0000000",
+          "context": "First MAGICUBE (Cells 000-999)"
+        },
+        "depth_6": {
+          "scale": 1000000,
+          "min_range": "{prefix}1-{prefix}999",
+          "min_examples": [
+            "0000001",
+            "0000009",
+            "00000000",
+            "00000099",
+            "000000000",
+            "000000999"
+          ],
+          "context": "Set of 1,000 MAGICUBES (MIN index 1-999)"
+        },
+        "depth_9": {
+          "scale": 1000000000,
+          "min_range": "{prefix}1000-{prefix}999999",
+          "min_examples": [
+            "0000001000",
+            "0000009999",
+            "00000000000",
+            "000000999999"
+          ],
+          "context": "Set of 1,000,000 MAGICUBES (MIN index 1000-999999)"
+        },
+        "depth_12": {
+          "scale": 1000000000000,
+          "min_range": "{prefix}1000000-{prefix}999999999",
+          "min_examples": [
+            "0000001000000",
+            "000000999999999"
+          ],
+          "context": "Set of 1,000,000,000 MAGICUBES (MIN index 1000000-999999999)"
+        }
+      }
+    },
+    "paths_directory": {
+      "path": "core/.paths/",
+      "purpose": "Semantic context addressing (MEGA/Elevation metadata)",
+      "relationship": "Parallel to .structure/ - provides MEGA/MMM-SSM and Elevation/MM-SM context"
+    },
+    "stem_directory": {
+      "path": ".stem/",
+      "logical_hierarchy": {
+        "roots": [
+          "i",
+          "ii",
+          "iii",
+          "iv",
+          "v",
+          "vi",
+          "vii",
+          "viii",
+          "ix",
+          "x"
+        ],
+        "branches_per_root": "00-99 (100 numeric branches)",
+        "nodes_per_branch": "27 (a-m, .alpha, n-z)",
+        "sub_nodes_per_node": "27 (a-m, .beta, n-z)",
+        "pattern": "axial_addressing_base27",
+        "instantiation": "conceptual_only (not physically created)"
+      },
+      "purpose": "Singularity structure for DDBAC / Base-2 precedence alignment",
+      "sync_status": "synced_from_github",
+      "subdirectories": [
+        ".g/",
+        ".x/"
+      ]
+    }
+  },
+  "source_authority": "bugworld_session_config_builder.py v260307.3 L78-85 (parallel_session_architecture) + adminx directive DBUG 260307 (1) workspace expansion"
 }
