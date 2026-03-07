@@ -87,3 +87,11 @@ notes.txt
 # Keep the folder, ignore temporary runtime files inside
 .constructs/.tmp
 .constructs/.lock
+
+# Rust toolchain
+.rustup/
+target/
+*.dll
+*.rlib
+*.pdb
+
