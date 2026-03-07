@@ -1,7 +1,7 @@
 # dbug — BUGWORLD 2026
 
 > Public Template Repository for BUGWORLD 2026 Session Development  
-> **Spec:** `v260303.1` | **Sync Root:** `C:\dbug` | **Session:** `DBUG 260303 (1)`
+> **Spec:** `v260307.3` | **Sync Root:** `C:\dbug` | **Session:** `DBUG 260307 (1)`
 
 ## 🔐 Core Rules
 
