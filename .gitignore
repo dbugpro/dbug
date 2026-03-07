@@ -95,3 +95,9 @@ target/
 *.rlib
 *.pdb
 
+
+# Slack credentials (NEVER commit)
+tools/slack/slack_credentials.json
+
+# Slack credentials
+tools/slack/slack_credentials.json
